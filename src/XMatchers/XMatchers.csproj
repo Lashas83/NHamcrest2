@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02FED65F-DB39-4724-A08F-11134F34821D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XMatchers</RootNamespace>
+    <AssemblyName>XMatchers</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contains.cs" />
+    <Compile Include="Core\AllOfMatcher.cs" />
+    <Compile Include="Core\AnyOfMatcher.cs" />
+    <Compile Include="Core\AnythingMatcher.cs" />
+    <Compile Include="Core\CastMatcher.cs" />
+    <Compile Include="Core\CombinableMatcher.cs" />
+    <Compile Include="Core\EveryMatcher.cs" />
+    <Compile Include="Core\IsCollectionContainingMatcher.cs" />
+    <Compile Include="Core\IsDictionaryContainingMatcher.cs" />
+    <Compile Include="Core\IsEqualMatcher.cs" />
+    <Compile Include="Core\IsEquivalentDictionaryMatcher.cs" />
+    <Compile Include="Core\IsEquivalentListMatcher.cs" />
+    <Compile Include="Core\IsEquivalentSetMatcher.cs" />
+    <Compile Include="Core\IsGreaterThanMatcher.cs" />
+    <Compile Include="Core\IsGreaterThanOrEqualToMatcher.cs" />
+    <Compile Include="Core\IsInstanceOfMatcher.cs" />
+    <Compile Include="Core\IsLessThanMatcher.cs" />
+    <Compile Include="Core\IsLessThanOrEqualToMatcher.cs" />
+    <Compile Include="Core\IsNotMatcher.cs" />
+    <Compile Include="Core\IsNullMatcher.cs" />
+    <Compile Include="Core\IsSameMatcher.cs" />
+    <Compile Include="Core\LengthMatcher.cs" />
+    <Compile Include="Core\NonNullDiagnosingMatcher.cs" />
+    <Compile Include="Core\NonNullMatcher.cs" />
+    <Compile Include="Core\ObjectFeatureMatcher.cs" />
+    <Compile Include="Core\PropertyMatcher.cs" />
+    <Compile Include="Core\StringContainsMatcher.cs" />
+    <Compile Include="Core\StringEndsWithMatcher.cs" />
+    <Compile Include="Core\StringStartsWithMatcher.cs" />
+    <Compile Include="Core\StructuralComparisonMatcher.cs" />
+    <Compile Include="Core\SubstringMatcher.cs" />
+    <Compile Include="Core\ThrowsMatcher.cs" />
+    <Compile Include="Core\TypedLengthMatcher.cs" />
+    <Compile Include="Describe.cs" />
+    <Compile Include="Description.cs" />
+    <Compile Include="DiagnosingMatcher.cs" />
+    <Compile Include="Ends.cs" />
+    <Compile Include="Every.cs" />
+    <Compile Include="Has.cs" />
+    <Compile Include="IDescription.cs" />
+    <Compile Include="IMatcher.cs" />
+    <Compile Include="IObjectFeatureMatcher.cs" />
+    <Compile Include="Is.cs" />
+    <Compile Include="ISelfDescribing.cs" />
+    <Compile Include="Matcher.cs" />
+    <Compile Include="MatcherExtensions.cs" />
+    <Compile Include="Matches.cs" />
+    <Compile Include="NotEvery.cs" />
+    <Compile Include="NullDescription.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Starts.cs" />
+    <Compile Include="StringDescription.cs" />
+    <Compile Include="Throws.cs" />
+    <Compile Include="TypeExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
