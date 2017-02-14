@@ -145,23 +145,13 @@ namespace XMatchers.Core
 
     internal class EntryDescriptor<TKey, TValue>
     {
-        private readonly IMatcher<TKey> _keyMatcher;
-        private readonly IMatcher<TValue> _valueMatcher;
-
         public EntryDescriptor(IMatcher<TKey> keyMatcher, IMatcher<TValue> valueMatcher)
         {
-            _keyMatcher = keyMatcher;
-            _valueMatcher = valueMatcher;
+            KeyMatcher = keyMatcher;
+            ValueMatcher = valueMatcher;
         }
 
-        public IMatcher<TKey> KeyMatcher
-        {
-            get { return _keyMatcher; }
-        }
-
-        public IMatcher<TValue> ValueMatcher
-        {
-            get { return _valueMatcher; }
-        }
+        public IMatcher<TKey> KeyMatcher { get; }
+        public IMatcher<TValue> ValueMatcher { get; }
     }
 }

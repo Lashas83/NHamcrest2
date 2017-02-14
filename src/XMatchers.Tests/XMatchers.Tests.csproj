@@ -63,7 +63,11 @@
     <Compile Include="AssertExtensions.cs" />
     <Compile Include="FakeMatcher.cs" />
     <Compile Include="FeatureMatcherDescriptionTests.cs" />
+    <Compile Include="SetOfComparisonMatcherSuccessTest.cs" />
+    <Compile Include="SetOfComparisonMatcherFailureTest.cs" />
+    <Compile Include="ListOfComparisonMatcherFailureTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ListOfComparisonMatcherSuccessTest.cs" />
     <Compile Include="StructuralComparisonMatcherFactoryFailureTest.cs" />
     <Compile Include="StructuralComparisonMatcherFactorySuccessTest.cs" />
     <Compile Include="StructuralComparisonTests.cs" />

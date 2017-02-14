@@ -56,7 +56,8 @@ namespace XMatchers.Core
 
                 foreach (var matcher in matcherArray)
                 {
-                    if (!first) description.AppendText(",").AppendNewLine();
+                    if (!first)
+                        description.AppendText(",").AppendNewLine();
 
                     description.AppendDescriptionOf(matcher);
 
