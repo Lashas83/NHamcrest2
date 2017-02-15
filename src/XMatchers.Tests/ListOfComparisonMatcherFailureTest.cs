@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XMatchers.Core;
 using XMatchers.Tests.TestClasses;
 using Xunit;
 using Assert = XMatchers.Xunit.Assert;

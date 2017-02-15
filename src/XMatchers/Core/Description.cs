@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace XMatchers
+namespace XMatchers.Core
 {
     public abstract class Description : IDescription
     {

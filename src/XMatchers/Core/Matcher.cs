@@ -1,4 +1,4 @@
-﻿namespace XMatchers
+﻿namespace XMatchers.Core
 {
     public abstract class Matcher<T> : IMatcher<T>
     {

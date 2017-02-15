@@ -74,8 +74,8 @@
     <Compile Include="Core\ThrowsMatcher.cs" />
     <Compile Include="Core\TypedLengthMatcher.cs" />
     <Compile Include="Describe.cs" />
-    <Compile Include="Description.cs" />
-    <Compile Include="DiagnosingMatcher.cs" />
+    <Compile Include="Core\Description.cs" />
+    <Compile Include="Core\DiagnosingMatcher.cs" />
     <Compile Include="Ends.cs" />
     <Compile Include="Every.cs" />
     <Compile Include="Has.cs" />
@@ -84,14 +84,14 @@
     <Compile Include="IObjectFeatureMatcher.cs" />
     <Compile Include="Is.cs" />
     <Compile Include="ISelfDescribing.cs" />
-    <Compile Include="Matcher.cs" />
+    <Compile Include="Core\Matcher.cs" />
     <Compile Include="MatcherExtensions.cs" />
     <Compile Include="Matches.cs" />
     <Compile Include="NotEvery.cs" />
-    <Compile Include="NullDescription.cs" />
+    <Compile Include="Core\NullDescription.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Starts.cs" />
-    <Compile Include="StringDescription.cs" />
+    <Compile Include="Core\StringDescription.cs" />
     <Compile Include="Throws.cs" />
     <Compile Include="TypeExtensions.cs" />
   </ItemGroup>

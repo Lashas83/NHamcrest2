@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using XMatchers.Core;
+using Xunit;
 using Assert = XMatchers.Xunit.Assert;
 
 namespace XMatchers.Tests

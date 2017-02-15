@@ -1,4 +1,5 @@
-﻿using XMatchers.Xunit;
+﻿using XMatchers.Core;
+using XMatchers.Xunit;
 
 namespace XMatchers.Tests
 {

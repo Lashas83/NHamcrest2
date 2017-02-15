@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace XMatchers
+namespace XMatchers.Core
 {
     public class NullDescription : IDescription
     {

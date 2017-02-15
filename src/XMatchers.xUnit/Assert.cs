@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 using XMatchers;
+using XMatchers.Core;
 using Xunit.Sdk;
 
 namespace XMatchers.Xunit

@@ -12,14 +12,14 @@ namespace XMatchers
             return
                 type.GetTypeInfo().IsValueType ||
                 type.GetTypeInfo().IsPrimitive ||
-                new[] { 
-				typeof(String),
-				typeof(Decimal),
-				typeof(DateTime),
-				typeof(DateTimeOffset),
-				typeof(TimeSpan),
-				typeof(Guid)
-			}.Contains(type) ||
+                new[] {
+                typeof(String),
+                typeof(Decimal),
+                typeof(DateTime),
+                typeof(DateTimeOffset),
+                typeof(TimeSpan),
+                typeof(Guid)
+            }.Contains(type) ||
                 Convert.GetTypeCode(type) != TypeCode.Object;
         }
     }
