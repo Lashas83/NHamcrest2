@@ -1,4 +1,4 @@
-ve3rsion: 0.1.{build}-{branch}
+version: 0.1.{build}-{branch}
 configuration:
 - Debug
 - Release
