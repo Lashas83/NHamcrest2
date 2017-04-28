@@ -11,11 +11,11 @@ init:
 - ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
 # - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 before_build:
+- ps: Get-ChildItem Env:
+- ps: dotnet --info
 - appveyor-retry dotnet restore -v Minimal
 
 build_script:
-- ps: dotnet --info
-- ps: dotnet restore
 - ps: dotnet build -c %CONFIGURATION% --version-suffix %LABEL% -v minimal
 after_build:
 - ps: dotnet pack "src\NHamcrest.XUnit" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
