@@ -16,11 +16,11 @@ before_build:
 - appveyor-retry dotnet restore -v Minimal
 
 build_script:
-- ps: dotnet build -c %CONFIGURATION% --version-suffix %LABEL% -v minimal
+- ps: dotnet build -c $Env:CONFIGURATION --version-suffix $Env:LABEL -v minimal
 after_build:
-- ps: dotnet pack "src\NHamcrest.XUnit" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
+- ps: dotnet pack "src\NHamcrest.XUnit" -c $Env:CONFIGURATION --no-build --version-suffix $Env:LABEL -o artifacts
 - ps: ls artifacts
 test_script:
-- ps: dotnet test -c %CONFIGURATION% --no-build "src\NHamcrest.Tests\NHamcrest.Tests.csproj"
+- ps: dotnet test -c $Env:CONFIGURATION --no-build "src\NHamcrest.Tests\NHamcrest.Tests.csproj"
 artifacts:
 - path: artifacts/**/*.*
